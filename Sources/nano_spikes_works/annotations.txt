@@ -1,0 +1,11 @@
+This file will be given the 12th April
+It gives the distribution of the training and testing set, 
+and the annotation for each click : its Id, X, Y, Z in meter, the origin is the
+hydrophone, and the range of the whale in meter (=norm(X,Y,Z)).
+We also precise the quality of the annotation (=residual of the computation of
+the position of the whale based on 4 hydrophones antenna (see ICASSP paper 2019),
+that can be used for weighting samples in the training.
+
+Note that the row of the matrix are in random order ( = clicks(rando) ), as the
+task is not a tracking task, but range estimation on each individual click based
+on its multipulsed temporal structure.
